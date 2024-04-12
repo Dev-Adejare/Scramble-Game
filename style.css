@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display:flex;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    color: rgb(142, 192, 236);
+    background:url(image/pexels-cliford-mervil-2469122.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.house{
+    background-color: rgba(255, 255, 255, 0.902);
+    width:33rem;
+    height: 27rem;
+    color:black;
+    border-bottom-right-radius: 11%;    ;
+    box-shadow: 0 1px 0 2px  white;
+   ;
+    
+}
+
+h1{
+    font-size: 2rem;
+    text-align: center;
+    background-color: black;
+    color:rgba(255, 255, 255, 0.902);
+    
+    
+ box-shadow: 0 1px 0 2px  black; 
+    
+    padding:1rem;
+   
+
+}
+
+h5{
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    font-weight: 300;
+}
+
+input{
+    width: 430px; 
+    height:45px;
+    border:2px solid rgb(1, 75, 141);
+}
+.hint{
+    padding:0.5rem 3rem;
+    font-size: 1.2rem;
+    text-align: center;
+    color:rgb(1, 75, 141);
+    
+}
+
+.time{
+    padding:0.5rem 3rem;
+    font-size: 1.2rem;
+    text-align: center;
+    color:rgb(1, 75, 141);
+    
+}
+
+
+
+.timeAndScore{
+    display:flex;
+    justify-content: space-between;
+    
+}
+
+.score{
+    font-size: 1.4rem;
+    padding-right:4rem;
+    /* padding-bottom: 2rem; */
+}
+
+.scoreValue{
+    color: rgb(1, 75, 141);
+    font-weight: 600;
+}
+
+.timeleft{
+    text-align: left;
+    color: rgb(1, 75, 141);
+    font-weight: 400;
+}
+
+.real {
+    font-size: 1.76rem;
+    color: rgb(1, 75, 141);
+    text-align: center;
+    margin-top: 2rem;
+    
+    letter-spacing: 14px;
+    font-weight: 900;
+}
+
+
+
+
+
+.timeleft span{
+   color: red
+}
+.text-center{
+    margin-top: 3rem;
+    text-align: center;
+}
+
+
+
+input{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    display: flex;
+    border-radius: 7px;
+   background-color: white;
+    box-shadow:  1px 1px rgb(101, 130, 195);
+}
+
+input[type=text]
+{
+    color:#000;
+    font-size: 1rem;
+    font-weight:700;
+}
+
+/* .input::placeholder{
+    color: rgb(1, 75, 141);
+
+    
+} */
+.pb-5{
+    margin-top: 1rem;
+}
+
+.btn{
+    cursor: pointer;
+    background:linear-gradient( rgb(1, 75, 141),white,white,white, rgb(1, 75, 141));
+    width:9rem;
+    opacity:65%;
+    font-size:15px;
+    font-weight: 550;
+    height: 2.2rem;
+    color: rgb(1, 75, 141);
+    
+    border-bottom-left-radius: 5%;
+    border-radius: 11px;
+    box-shadow: 2px 2px 2px 0 rgb(128, 184, 236);
+
+}
+
+.btn:hover{
+    background: #fff;
+    color:grey;
+}
+
+@media screen and (max-width:543px) {
+    .house{
+        width:27rem;
+    height: 27rem;
+    }
+
+    input{
+        width:330px;
+    }
+
+    .text-center{
+        margin-top:1rem;
+
+    }
+}
+
+@media screen and (max-width:445px) {
+    .house{
+        width:23rem;
+    height: 27rem;
+    }
+
+    input{
+        width:280px;
+    }
+
+    .text-center {
+        font-size: 1.36rem;
+        letter-spacing: 1px;
+        
+     margin-top:3rem;
+
+    }
+
+    h5{
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .btn{
+        width:7rem
+    }
+
+}
+
+
+@media screen and (max-width:388px) {
+    .house{
+        width:19rem;
+    height: 25rem;
+    }
+
+    input{
+        width:260px;
+    }
+
+    .text-center {
+        font-size: 1.36rem;
+        letter-spacing: 1px;
+        
+    }
+
+    h5{
+        font-size: 14px;
+        text-align: center;
+        margin-top:0.5rem;
+    }
+
+    .time{
+        font-size: 13px;
+        margin-right:1rem
+    }
+    .timeleft span{
+        font-size: 11px;
+        
+     }
+
+     .score{
+        font-size: 13px;
+
+     }
+    .btn{
+        width:7rem;
+        margin-bottom: 2rem;
+    }
+    .buttons{
+        margin-top:1rem;
+    }
+
+}
+
+@media screen and (max-width:315px) {
+    h1{
+        font-size: 1.4rem;
+    }
+    
+    .house{
+        width:17rem;
+    height: 25rem;
+    }
+
+    input{
+        width:240px;
+    }
+
+    .text-center {
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+    }
+
+    h5{
+        font-size: 1rem;
+        text-align: center;
+        margin-top:0.5rem;
+    }
+
+    .btn{
+        width:7rem
+    }
+
+    .word {
+        font-size: 1.6rem;
+        position: relative;
+        bottom:2rem
+    }
+
+}
